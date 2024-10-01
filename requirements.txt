@@ -1,0 +1,6 @@
+keyring
+cryptography
+google-generativeai
+rich
+pyperclip
+keyboard
