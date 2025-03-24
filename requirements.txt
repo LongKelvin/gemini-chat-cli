@@ -1,6 +1,10 @@
-keyring
-cryptography
-google-generativeai
 rich
+google-generativeai
+PyPDF2
+cryptography
+keyring
 pyperclip
 keyboard
+openpyxl
+pandas
+python-docx
