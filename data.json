@@ -1,0 +1,54 @@
+{
+  "actions": [
+    {
+      "name": "CREATE_TEXT_FILE",
+      "description": "Create a new text file with specified content.",
+      "prompt_template": "Write a Python function called `create_text_file(file_path, content)` that creates a text file at the given `file_path` and writes the `content` string to it.  Handle potential errors gracefully (e.g., file already exists, permission errors). Include a docstring. Return a success/error message."
+    },
+    {
+      "name": "READ_FILE",
+      "description": "Read the content of a file.",
+      "prompt_template": "Write a Python function called `read_file(file_path)` that reads the content of the file at `file_path` and returns the content as a string. Handle file not found and other potential errors. Return an error message if reading fails, otherwise return the file content."
+    },
+    {
+      "name": "APPEND_TO_FILE",
+      "description": "Appends content to a file",
+      "prompt_template": "Write a Python function called `append_to_file(file_path, content)` that appends the `content` to the file located in `file_path`. Handle file not found and other potential errors. Return an error message if appending fails, otherwise return a success message."
+    },
+    {
+      "name": "DELETE_FILE",
+      "description": "Deletes a file.",
+      "prompt_template": "Write a Python function called `delete_file(file_path)` that deletes the file at the given `file_path`. Handle potential errors (e.g., file not found, permission errors).  Return a success/error message."
+    },
+    {
+      "name": "COPY_FILE",
+      "description": "Copies a file.",
+      "prompt_template": "Write a Python function called `copy_file(source_path, destination_path)` that copies the file at `source_path` to `destination_path`. Handle potential errors. Return a success/error message."
+    },
+    {
+      "name": "MOVE_FILE",
+      "description": "Moves a file.",
+      "prompt_template": "Write a Python function called `move_file(source_path, destination_path)` that moves the file at `source_path` to `destination_path`. Handle potential errors. Return a success/error message."
+    },
+    {
+        "name": "RENAME_FILE",
+        "description": "Renames a file.",
+        "prompt_template": "Write a Python function called `rename_file(old_path, new_name)` that renames the file at `old_path` to `new_name`. Handle potential errors. Return a success/error message."
+    },
+     {
+        "name": "BACKUP_FILE",
+        "description": "Backup a file",
+        "prompt_template": "Write a Python function called `backup_file(file_path)` that backup a file from `file_path`. Handle potential errors. Return a success/error message or backup file path."
+    },
+    {
+        "name": "RESTORE_FILE",
+        "description": "Restores a file from a backup",
+        "prompt_template": "Write a Python function called `restore_file(file_path, backup_path)` that restores the file at `file_path` from `backup_path`. Handle potential errors. Return a success/error message."
+    },
+    {
+        "name": "LIST_FILES",  
+        "description": "List files in a directory.",
+        "prompt_template": "Write a Python function called `list_files(directory_path)` that lists all files and directories within the given `directory_path`. Return the list as a string. Handle errors (e.g., directory not found)."
+    }
+  ]
+}
